@@ -1,6 +1,6 @@
 const { Telegraf } = require('telegraf');
 const express = require('express');
-const Token = '6561647272:AAEf7qawKDZjeIz0FzgxjbeeeknmqcYOroQ';
+const Token = process.env.TELEGRAM_TOKEN || '6561647272:AAEf7qawKDZjeIz0FzgxjbeeeknmqcYOroQ';
 const bot = new Telegraf(Token);
 const botz = express.Router();
 
