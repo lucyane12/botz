@@ -4,6 +4,9 @@ const Token = '6561647272:AAEf7qawKDZjeIz0FzgxjbeeeknmqcYOroQ';
 const bot = new Telegraf(Token);
 const botz = express.Router();
 
+botz.get('/bot',async(req,res) => {
+  res.send('Bot berjalan!');
+});
 
 bot.start((zeev) => {
   zeev.reply('Hai saya bot...!');
